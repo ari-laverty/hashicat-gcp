@@ -1,9 +1,9 @@
 module "vpc" {
     source = "app.terraform.io/agbg-australia/network/google"
-    version = "3.4.0"
+    version = "4.1.0"
+    
     project_id = var.project
     network_name = "gaurav-network"
-    routing_mode = "GLOBAL"
     subnets = [
         {
             subnet_name   = "gaurav-subnet"
